@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تست اتصال سرور محلی</title>
+    <style>
+        body {
+            font-family: Tahoma, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>سلام! سرور شما فعال است.</h1>
+        <p>این یک صفحه تست برای بررسی اتصال از راه دور است.</p>
+        <button onclick="showAlert()">تست جاوا اسکریپت</button>
+        <p id="status"></p>
+    </div>
+
+    <script>
+        function showAlert() {
+            document.getElementById("status").innerText = "ارتباط با سرور برقرار است!";
+            alert("تبریک! همه چیز درست کار می‌کند.");
+        }
+    </script>
+</body>
+</html>
